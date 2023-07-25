@@ -1,8 +1,6 @@
-import React from 'react'
 
-type Props = {}
 
-const Features = (props: Props) => {
+const Features = () => {
 
     const features: string[] = [
         "Learning",
@@ -14,10 +12,10 @@ const Features = (props: Props) => {
     ]
 
     return (
-        <div className='text-black mobile:h-full md:h-screen md:w-screen bg-featuredbg md:px-[223px] md:py-[92px] mobile:p-0'>
+        <div className='text-black mobile:h-full md:h-screen md:w-screen bg-featuredbg flex flex-col md:px-[223px] md:py-[92px] mobile:p-0'>
             
             <div className='min-w-[557px] mx-auto max-w-[600px] h-[100px] inline-block mb-10'>
-                <p className='text-[#2A303B] md:text-[2.25rem] font-fr font-semibold tracking-[-0.04em] h-fit leading--[4rem] leading-[44.39px] mobile:text-[2.5rem] text-center'>
+                <p className=' text-[#2A303B] md:text-[2.25rem] font-fr font-semibold tracking-[-0.04em] h-fit leading--[4rem] leading-[44.39px] mobile:text-[2.5rem] text-center'>
                     You may wonder... How does a high
                     schoolers do all this?
                 </p>
@@ -36,7 +34,7 @@ const Features = (props: Props) => {
             
             <div className='mx-auto w-[834px] grid gap-10 font-fr md:grid-cols-3 md:grid-rows-2'>
                 {features.map((feature, index) => (
-                    <button key={index} className='mobile:basis-[16.66%]outline-black min-w-[250px] min-h-[50px] bg-[#ffffff] mx-auto text-[1.25rem] border border-[#d7d7d7] rounded-[20px] font-normal'>
+                    <button key={index} className='mobile:basis-[16.66%]outline-black min-w-[250px] min-h-[50px] bg-[#ffffff]  text-[1.25rem] border border-[#d7d7d7] rounded-[20px] font-normal'>
                         {feature}
                     </button>
                 ))}

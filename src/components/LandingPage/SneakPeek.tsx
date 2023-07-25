@@ -1,8 +1,4 @@
-import React from 'react'
-
-type Props = {}
-
-const SneakPeeks = (props: Props) => {
+const SneakPeeks = () => {
 
     const sneakPeek = [{ number: "01", para: "Team up with equally ambitious peers ready to share the founder journey with you." },
     { number: "02", para: "Whether you are a visionary, hustler or hacker, you are invited to join the fellowship to build the next big thing. " },
@@ -14,7 +10,7 @@ const SneakPeeks = (props: Props) => {
         <div className='w-[70%] h-fit my-[100px] justify-center m-auto items-center'>
             <div className='mx-auto max-h-fit min-w-[463px] mb-[51px]'>
                 <h3 className='font-semibold tracking-[-0.04em] text-[2.25rem] font-fr text-sneakpeek text-center'>
-                    A sneak peek into the fellowship..
+                    A sneak peek into the membership plans...
                 </h3>
             </div>
             <div className='gap-x-[130px] gap-y-[72px] text-left tracking-[-0.015em] relative leading-[2rem] grid grid-cols-2 grid-rows-2 mx-auto'>

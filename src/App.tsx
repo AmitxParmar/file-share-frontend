@@ -2,18 +2,20 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import LandingPage from "./Pages/Landing";
 import Dashboard from "./Pages/Dashboard";
-import Header from "./components/LandingPage/Header";
+import Header from "./components/Header";
 import DownloadSingleFile from "./Pages/DownloadSingleFile";
+import FAQS from "./Pages/FAQS";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Header />
+        <Header />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/download/:id" element={<DownloadSingleFile />} />
+          <Route path="/faqs" element={<FAQS/> } />
         </Routes>
       </BrowserRouter>
     </>

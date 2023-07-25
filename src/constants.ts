@@ -12,9 +12,9 @@ type Faqs = {
 };
 
 export const nav_items: Header[] = [
-    { title: "Downloads", path: "/download" },
-    { title: "About", path: "/about-us" },
-    { title: "FAQ", path: "/FAQ" },
+    { title: "Downloads", path: "/download/insert-id-here" },
+    
+    { title: "FAQS", path: "/faqs" },
 ];
 
 export const faqs: Faqs[] = [

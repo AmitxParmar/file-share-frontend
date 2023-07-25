@@ -1,22 +1,22 @@
 import { nav_items } from "@/constants";
-
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  
   return (
     <nav className="fixed w-screen min-h-[10vh] flex flex-row py-[10px] text-center shadow-md mobile:w-screen bg-review justify-between items-center mx-auto md:px-12 mobile:px-6 inset-x-0 border-b border-b-gray-200 top-0 z-10">
       {/* Nav  items left*/}
-      <div className="flex  items-center">
+      <div className="flex items-center">
         <Link
           to={"/"}
           className="h-10 w-10 md:mr-[1rem] max-w-full inline-block"
         >
           <img
-            src="/teensfounder.png"
-            height={40}
-            width={40}
+            src="../assets/logo.png"
+            height={100}
+            width={100}
             alt={"logo"}
-            className="rounded-full border border-gray shadow shadow-orange"
+            className="flex-1 w-full rounded-full border border-gray shadow shadow-orange"
           />
         </Link>
         {/* nav-simple-content */}
@@ -33,10 +33,10 @@ const Header = () => {
       {/* Nav items right */}
       <div className="flex flex-nowrap flex-row text-[.999rem] min-w-[245px]">
         <button className="bg-white border-2 mr-4 p-1 rounded-full border-orange text-orange flex-auto hover:bg-orange hover:text-white font-semibold px-4">
-          Join an Info Session
+          Sign Up
         </button>
         <button className="bg-orange hover:text-orange hover:border-orange hover:bg-white mobile:max-w-fit whitespace-nowrap min-w-[100px] flex-auto border-2 rounded-full text-white font-semibold">
-          Apply
+          LOGIN
         </button>
       </div>
     </nav>

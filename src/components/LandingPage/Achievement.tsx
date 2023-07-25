@@ -1,8 +1,5 @@
-import React from 'react'
 
-type Props = {}
-
-const Achievements = (props: Props) => {
+const Achievements = () => {
 
 
     return (
@@ -18,26 +15,21 @@ const Achievements = (props: Props) => {
                 <div className='mb-[52px] max-w-[686px] border border-[#D7D7D7]'>
                     <p className='text-text text-[18px] p-6 tracking-[-0.015em] leading-[2rem] w-full'>In the past two months
                         <span className='text-textHighlight font-medium'>
-                            {" "}24 teenagers{" "}
-                        </span>have cofounded
+                            {" "}Millions of users{" "}
+                        </span>have downloaded/uploaded over
                         <span className='text-textHighlight font-medium'>
-                            {" "} 10 startups{" "}
-                        </span>,
-                        with a collective portfolio value of
-                        <span className='text-textHighlight font-medium'>
-                            {" "}$10 million{" "}
+                            {" "} 1TB {" "}
                         </span>
-                        as a part of Teenpreneur Fellowship
+                        files
                     </p>
                 </div>
 
                 {/* Achievement */}
                 <div className='grid lg:grid-cols-3 gap-5 lg:grid-rows-none xs:grid-rows-3 xs:grid-cols-none text-[18px] p-6 tracking-[-0.015em] leading-[2rem]'>
                     <div className=''>
-                        <span className='font-fr font-bold leading-[118px] text-[96px] text-orange'>24</span>
+                        <span className='font-fr font-bold leading-[118px] text-[96px] text-orange'>100m+</span>
                         <p className='text-text break-words'>
-                            teenagers aged
-                            between 13-19
+                            weekly users
                         </p>
                     </div>
                     <div className=''>
@@ -45,8 +37,8 @@ const Achievements = (props: Props) => {
                         <p className='text-text'>startups</p>
                     </div>
                     <div className=''>
-                        <span className='font-fr font-bold leading-[7.37rem] text-[96px] text-orange'>$5M</span>
-                        <p className='text-text'>collective portfolio value</p>
+                        <span className='font-fr font-bold leading-[7.37rem] text-[96px] text-orange'>200MB</span>
+                        <p className='text-text'>upload files upto</p>
                     </div>
                 </div>
             </div>
